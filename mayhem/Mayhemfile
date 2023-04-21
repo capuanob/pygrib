@@ -1,9 +1,9 @@
-project: pypcode
-target: fuzz-pcode
+project: pygrib
+target: fuzz-parse
 testsuite:
     - file://mayhem/testsuite
 
 cmds:
-  - cmd: /src/mayhem/fuzz_parse.py
+  - cmd: /pygrib/mayhem/fuzz_parse.py
     libfuzzer: true
     timeout: 8
