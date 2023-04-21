@@ -8,7 +8,7 @@ from contextlib import contextmanager
 
 import fuzz_helpers as fh
 
-with atheris.instrument_imports():
+with atheris.instrument_imports(include=['pygrib']):
     import pygrib
 
 # Disable all pygrib logging
